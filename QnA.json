@@ -1,0 +1,32 @@
+{
+	"Q1":
+	{
+		"film":"Taxi Driver",
+		"question":"What is the first line spoken by Robert De Niro in the cult classic film ‘Taxi Driver’?",
+		"answer_1":"I can’t sleep nights.",
+		"answer_2":"So, why do you want to be a Taxi Driver?",
+		"answer_3":"Got your license?",
+		"correct":"1",
+		"img":"img/taxi-driver"
+	},
+	"Q2":
+	{
+		"film":"Punch Drunk love",
+		"question":"Barry, played by Adam Sandler, in ‘Punch Drunk Love’ is obsessed with which confectionery?",
+		"answer_1":"Pudding cups",
+		"answer_2":"Smoothies",
+		"answer_3":"Popsicles",
+		"correct":"1",
+		"img":"img/punch-drunk-love"
+	},
+	"Q3":
+	{
+		"film":"Bombay",
+		"question":"In the 90s hit film, Bombay, what is the lead character Shekhar studying to become?",
+		"answer_1":"A Journalist",
+		"answer_2":"A lawyer",
+		"answer_3":"A Doctor",
+		"correct":"1",
+		"img":"img/bombay"
+	}
+}
