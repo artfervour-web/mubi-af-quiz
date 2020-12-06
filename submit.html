@@ -92,15 +92,26 @@
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzVA6L-XmbxR565JNxVVicAadIF-uRUn5mYMgM8CzJZ2P8JZ5U/exec'
                 const form = document.forms['mubi-contact']
 
+                function mail_check() {
+                    let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;;
+                    if(document.getElementById('email').value.match(mailformat))
+                        return false
+                    return true
+                }
+                
                 form.addEventListener('submit', e => {
                     e.preventDefault()
                     name_field = document.getElementById('name').value
                     email_field = document.getElementById('email').value
-                    if(name_field == "" || email_field == "") {
+                    if(name_field == "" || email_field == "" || mail_check()) {
                         if(name_field == "")
-                            document.getElementById('name').style.background = 'bisque'
-                        if(email_field == "")
-                            document.getElementById('email').style.background = 'bisque'
+                            document.getElementById('name').style.background = 'lightsalmon'
+                        else
+                            document.getElementById('name').style.background = 'whitesmoke'
+                        if(email_field == "" || mail_check())
+                            document.getElementById('email').style.background = 'lightsalmon'
+                        else
+                            document.getElementById('email').style.background = 'whitesmoke'
                     } else {
                         document.getElementById('submit').disabled = true;
                         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
