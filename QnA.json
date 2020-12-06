@@ -7,7 +7,7 @@
 		"answer_2":"So, why do you want to be a Taxi Driver?",
 		"answer_3":"Got your license?",
 		"correct":"1",
-		"img":"img/taxi-driver"
+		"img":"img/taxi-driver.jpg"
 	},
 	"Q2":
 	{
@@ -17,7 +17,7 @@
 		"answer_2":"Smoothies",
 		"answer_3":"Popsicles",
 		"correct":"1",
-		"img":"img/punch-drunk-love"
+		"img":"img/punch-drunk-love.jpg"
 	},
 	"Q3":
 	{
@@ -27,6 +27,6 @@
 		"answer_2":"A lawyer",
 		"answer_3":"A Doctor",
 		"correct":"1",
-		"img":"img/bombay"
+		"img":"img/bombay.jpg"
 	}
 }
